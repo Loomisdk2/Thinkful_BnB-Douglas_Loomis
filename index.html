@@ -16,7 +16,7 @@
     />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  
+
 <!-- Web site starts here -->
   <body>
     <header>
@@ -36,6 +36,62 @@
       <section id="stay">
         <h2>Find the perfect vacation rental</h2>
         <!-- Create a form here -->
+        <form>
+          <div>
+            <label for="location">Location</label>
+            <input 
+            id="location" 
+            type="text" 
+            name="location"
+            placeholder="Search destination" 
+            />
+            </div>
+            <br/>
+              <!-- `Arrive`: `date` input type -->
+              <div>
+                <label for="arrive">Arrive</label>
+                <input
+                  id="arrive"
+                  type="date"
+                  name="arrival-date"
+                  min="2023-01-01"
+                  max="2024-01-01"
+                  required
+                  />
+              </div>
+            </div>
+            <br/>
+            <div>
+              <label for="departure">Departure</label>
+              <input
+                id="departure"
+                type="date"
+                name="departure-date"
+                min="2023-01-01"
+                max="2024-01-01"
+                required
+              />
+            </div>
+            <br/>
+            <form>
+              <div>
+                <label for="type">Type</label>
+                <select name="type" id="type" size="1">
+                  <option value="Apartment">Apartment</option>
+                  <option value="Barn">Barn</option>
+                  <option value="Castle">Castle</option>
+                  <option value="Houseboat">Houseboat</option>
+                  <option value="Tiny House">Tiny House</option>
+                  <option value="Yacht">Yacht</option>
+                  <option value="Yurt">Yurt</option>
+                </select>
+              </div>
+            <br/>
+            <div>
+              <button type="submit">Submit</button>
+            </div>
+          </div>
+        </form>
       </section>
 
       <!-- About -->
