@@ -64,6 +64,12 @@ header {
   color: #fff;
 }
 
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 header nav ul li {
   list-style-type: none;
 }
@@ -117,3 +123,15 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
+/* .menu {
+  display: flex;
+  flex-direction: row;
+} */
+
+/* ------- desktop view ------ */
+@media all and (min-width: 480px) {
+  body {
+
+  }
+}
