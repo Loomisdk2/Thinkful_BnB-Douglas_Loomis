@@ -35,50 +35,53 @@
       <!-- Stay -->
       <section id="stay">
         <h2>Find the perfect vacation rental</h2>
+        
         <!-- Create a form here -->
         <form>
-          <div>
+          <div class="group">
+          <div class="item">
             <label for="location">Location</label>
             <input 
             id="location" 
             type="text" 
             name="location"
             placeholder="Search destination" 
+            autofocus="on"
             />
             </div>
-            <br/>
               <!-- `Arrive`: `date` input type -->
-              <div>
-                <label for="arrive">Arrive</label>
+              <div class="item">
+                <label for="arrive" class="date">Arrive</label>
                 <input
                   id="arrive"
                   type="date"
-                  name="arrival-date"
+                  name="arrival"
                   min="2023-01-01"
                   max="2024-01-01"
                   required
                   />
               </div>
-            </div>
-            <br/>
-            <div>
+
               <!-- Departure -->
-              <label for="departure">Departure</label>
+              <div class="item">
+              <label for="depart">Depart</label>
               <input
-                id="departure"
+                id="depart"
                 type="date"
-                name="departure-date"
+                name="depart"
                 min="2023-01-01"
                 max="2024-01-01"
                 required
               />
             </div>
-            <br/>
             <form>
-              <div>
-                <!-- Type of accomodation -->
+              <!-- Type of accomodation -->
+              <div class="item">
                 <label for="type">Type</label>
-                <select name="type" id="type" size="1">
+                <select 
+                name="type" 
+                id="type" 
+                size="1">
                   <option value="Apartment">Apartment</option>
                   <option value="Barn">Barn</option>
                   <option value="Castle">Castle</option>
@@ -88,8 +91,7 @@
                   <option value="Yurt">Yurt</option>
                 </select>
               </div>
-            <br/>
-            <div>
+            <div class="item">
               <button type="submit">Submit</button>
             </div>
           </div>
@@ -167,3 +169,53 @@
     </footer>
   </body>
 </html>
+
+
+<!-- <form>
+  <div class="group">
+  <div class="item">
+  <label for="location">Location</label>
+  <input
+  id="location"
+  type="text"
+  name="location"
+  placeholder="Search destination"
+  autofocus="on"
+  />
+  </div>
+  <div class="item">
+  <label for="arrival" class="date">Arrive</label>
+  <input
+  type="date"
+  id="arrival"
+  name="arrival"
+  />
+  </div>
+  <div class="item">
+  <label for="depart" class="date">Depart</label>
+  <input
+  type="date"
+  id="depart"
+  name="depart"
+  />
+  </div>
+  <div class="item">
+  <label for="type">Type</label>
+  <select
+  name="type"
+  id="type"
+  size="1">
+  <option value="apartment">Apartment</option>
+  <option value="barn">Barn</option>
+  <option value="castle">Castle</option>
+  <option value="houseboat">Houseboat</option>
+  <option value="tiny-house">Tiny House</option>
+  <option value="yacht">Yacht</option>
+  <option value="yurt">Yurt</option>
+  </select>
+  </div>
+  <div class="item">
+  <button type="button">Search</button>
+  </div>
+  </div>
+  </form> -->
