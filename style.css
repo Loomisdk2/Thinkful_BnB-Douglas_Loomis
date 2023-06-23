@@ -25,7 +25,7 @@ p {
 section {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  /* text-align: center; */
   padding: 20px;
 }
 
@@ -34,9 +34,9 @@ section.alternate-background {
   color: #fff;
 }
 
-main img {
+/* main img {
   width: 100px;
-}
+} */
 
 img {
   width: 100%;
@@ -138,7 +138,6 @@ form button {
 }
 
 /* -------  Footer ------- */
-
 footer {
   background-color: #ff385c;
 }
@@ -150,8 +149,6 @@ footer p {
 }
 
 /* -------  Media Query ------- */
-
-/* ------- desktop view ------ */
 @media all and (min-width: 480px) {
   header {
 display: flex;
