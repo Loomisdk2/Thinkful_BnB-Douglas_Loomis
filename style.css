@@ -14,10 +14,11 @@ h2 {
 h3 {
   font-size: 18px;
   font-weight: 500;
-  text-align: center;
+  text-align: left;
 }
 
 p {
+
   line-height: 1.5em;
   margin: 0;
 }
@@ -40,6 +41,11 @@ main img {
 
 img {
   width: 100%;
+}
+
+img, p {
+display: flex;
+flex-direction: column;
 }
 
 /* ---  Groups & Items --- */
@@ -96,10 +102,21 @@ header nav ul li a:hover {
 
 /* -------  Search Form ------- */
 form {
-  align-content: space-evenly;
+  /* align-content: space-evenly; */
   border: 2px solid #ff385c;
   padding: 10px;
+  diplay: flex; 
+  justify-content: space-between;
+}
 
+form .group {
+  justify-content: space-between;
+  width: 100%;
+}
+
+form .item {
+  display: flex;
+  justify-content: space-between;
 }
 
 form label {
