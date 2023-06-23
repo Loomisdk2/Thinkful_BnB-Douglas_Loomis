@@ -42,10 +42,10 @@ img {
   width: 100%;
 }
 
-img, p {
+/* img, p {
 display: flex;
 flex-direction: column;
-}
+} */
 
 /* ---  Groups & Items --- */
 
@@ -151,14 +151,11 @@ footer p {
 
 /* -------  Media Query ------- */
 
-/* .menu {
-  display: flex;
-  flex-direction: row;
-} */
-
 /* ------- desktop view ------ */
 @media all and (min-width: 480px) {
-  body {
-
+  header {
+display: flex;
+justify-content: space-between;
+padding: 0 10%;
   }
 }
