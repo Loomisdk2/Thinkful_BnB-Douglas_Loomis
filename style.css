@@ -138,11 +138,65 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
+/* ------  Navigation  --------- */
 @media all and (min-width: 480px) {
   header {
     display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+  }
+  header nav ul {
+    flex-wrap: wrap;
+  }
+  .logo {
+    margin: 14px;
+    padding-top: 0;
+  }
+  /* -------  Form ------- */
+    form {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+    form div {
+      flex-direction: column;
+    }
+  
+    form button {
+      flex: 1;
+    }
+    form select, form input {
+      margin-bottom: 10px;
+    }
+  
+  
+  /* -------  Main Section ------- */
+  .group {
     flex-direction: row;
     justify-content: space-between;
+  }
+  .item-double {
+    flex: 2;
+    align-self: center;
+  }
+  .align-center {
+    align-self: center;
+  }
+  .cut-in-half {
+    flex-basis: calc(50% - 20px);
+  }
+  .change-to-wrap {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  /* header {
+    display: flex; */
+    /* flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+
   }
 
   form .group {
@@ -155,12 +209,15 @@ footer p {
     flex-direction: column;
   }
 
-  /* #about .group{
-display: flex;
-flex-direction: row; */
-
+  .group {
+/* display: flex; */
+/* flex-direction: row;
+justify-content: space-between;
   }
 
+  .group img {
+    width: 100%;
+  } */
   /* header nav {
     text-align: right;
   } */
