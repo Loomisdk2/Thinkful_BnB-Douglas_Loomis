@@ -25,7 +25,6 @@ p {
 section {
   display: flex;
   flex-direction: column;
-  /* text-align: center; */
   padding: 20px;
 }
 
@@ -33,10 +32,6 @@ section.alternate-background {
   background-color: #00a699;
   color: #fff;
 }
-
-/* main img {
-  width: 100px;
-} */
 
 img {
   width: 100%;
@@ -158,6 +153,12 @@ footer p {
   form .item {
     display: flex;
     flex-direction: column;
+  }
+
+  /* #about .group{
+display: flex;
+flex-direction: row; */
+
   }
 
   /* header nav {
