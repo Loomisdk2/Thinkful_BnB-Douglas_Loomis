@@ -148,6 +148,26 @@ footer p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  form .group {
+    display: flex;
+    flex-direction: row;
+  }
+
+  form .item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* header nav {
+    text-align: right;
+  } */
+  
+  /* header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 0 10%;
     text-align: center;
   }
@@ -160,5 +180,5 @@ footer p {
   header nav {
     display: flex;
     justify-content: center;
-  }
+  } */
 }
