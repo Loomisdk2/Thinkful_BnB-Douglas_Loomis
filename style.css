@@ -74,7 +74,6 @@ header {
 
 header nav {
   display: flex;
-  flex-direction: row;
   justify-content: center;
 }
 
@@ -99,7 +98,7 @@ form {
   /* align-content: space-evenly; */
   border: 2px solid #ff385c;
   padding: 10px;
-  display: flex; 
+  display: flex;
   justify-content: space-between;
 }
 
@@ -146,12 +145,20 @@ footer p {
 /* -------  Media Query ------- */
 @media all and (min-width: 480px) {
   header {
-display: flex;
-justify-content: space-between;
-padding: 0 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10%;
+    text-align: center;
   }
+
   .group {
     display: flex;
     flex-direction: column;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: center;
   }
 }
