@@ -95,6 +95,9 @@ form {
   padding: 10px;
   display: flex;
   justify-content: space-between;
+  /* new */
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 form .group {
@@ -105,6 +108,8 @@ form .group {
 form .item {
   display: flex;
   justify-content: space-between;
+  /* new */
+  margin-bottom: 10px;
 }
 
 form label {
@@ -113,7 +118,8 @@ form label {
 
 form select,
 form input {
-  margin-bottom: 20px;
+  /* changed from 20 px */
+  margin-bottom: 10px;
   width: 180px;
 }
 
@@ -147,19 +153,28 @@ footer p {
     padding: 0 20px;
     align-items: center;
   }
+
+  /* new */
+  header nav {
+    justify-content: space-between;
+  }
+
   header nav ul {
     flex-wrap: wrap;
   }
+
   .logo {
     margin: 14px;
     padding-top: 0;
   }
+
   /* -------  Form ------- */
   form {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
+
   form div {
     flex-direction: column;
   }
@@ -197,4 +212,10 @@ footer p {
     align-items: center;
     justify-content: center;
   }
+}
+
+/* new */
+/* ------- Logo -------- */
+.logo {
+  max-width: 200px;
 }
