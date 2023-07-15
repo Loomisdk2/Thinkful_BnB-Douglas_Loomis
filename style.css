@@ -14,6 +14,7 @@ h2 {
 h3 {
   font-size: 18px;
   font-weight: 500;
+  text-align: left;
 }
 
 p {
@@ -22,6 +23,8 @@ p {
 }
 
 section {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
 }
 
@@ -30,8 +33,8 @@ section.alternate-background {
   color: #fff;
 }
 
-main img {
-  width: 100px;
+img {
+  width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -64,8 +67,14 @@ header {
   color: #fff;
 }
 
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
 header nav ul li {
   list-style-type: none;
+  display: inline;
 }
 
 header nav ul li a {
@@ -81,8 +90,21 @@ header nav ul li a:hover {
 
 /* -------  Search Form ------- */
 form {
+  /* align-content: space-evenly; */
   border: 2px solid #ff385c;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+form .group {
+  justify-content: space-between;
+  width: 100%;
+}
+
+form .item {
+  display: flex;
+  justify-content: space-between;
 }
 
 form label {
@@ -92,7 +114,9 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
+  /* width: 180px; */
+  /* ThinkChat */
+  width: 100%;
 }
 
 form button {
@@ -105,7 +129,6 @@ form button {
 }
 
 /* -------  Footer ------- */
-
 footer {
   background-color: #ff385c;
 }
@@ -117,3 +140,63 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
+/* ------  Navigation  --------- */
+@media all and (min-width: 480px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+  }
+  header nav ul {
+    flex-wrap: wrap;
+  }
+  .logo {
+    margin: 14px;
+    padding-top: 0;
+  }
+  /* -------  Form ------- */
+  form {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  form div {
+    flex-direction: column;
+  }
+
+  form button {
+    flex: 1;
+  }
+  form select,
+  form input {
+    margin-bottom: 10px;
+  }
+
+  /* -------  Main Section ------- */
+  .group {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .item-double {
+    flex: 2;
+    align-self: center;
+  }
+  .align-center {
+    align-self: center;
+  }
+  .cut-in-half {
+    flex-basis: calc(50% - 20px);
+  }
+  .change-to-wrap {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  #host {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
