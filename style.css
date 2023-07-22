@@ -1,5 +1,4 @@
 /* -------  General Styles ------- */
-
 body {
   font-family: "Lato", sans-serif;
 }
@@ -35,7 +34,6 @@ main img {
 }
 
 /* ---  Groups & Items --- */
-
 .group {
   display: flex;
   flex-direction: column;
@@ -51,7 +49,6 @@ main img {
 }
 
 /* -------  Navigation ------- */
-
 header {
   background-color: #ff385c;
   padding: 20px 20px 0 20px;
@@ -87,7 +84,6 @@ header nav ul li a:hover {
 }
 
 /* -------  Search Form ------- */
-
 form {
   border: 2px solid #ff385c;
   padding: 10px;
@@ -120,7 +116,6 @@ form button {
 }
 
 /* -------  Footer ------- */
-
 footer {
   background-color: #ff385c;
 }
@@ -132,7 +127,6 @@ footer p {
 }
 
 /* -------  Media Query ------- */
-
 @media all and (min-width: 480px) {
   body {
     display: grid;
